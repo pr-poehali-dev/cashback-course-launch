@@ -123,7 +123,8 @@ export default function Index() {
     <div className="font-golos bg-white min-h-screen overflow-x-hidden">
       {/* Топ-бар */}
       <div className="bg-[#FF6B35] text-white text-center py-2.5 text-sm font-medium tracking-wide">
-        🔥 Ограниченное предложение — цена 3 000 ₽ вместо 9 900 ₽
+        <img src="https://cdn.poehali.dev/projects/e6828564-96b9-4a92-8542-3bdfdbe90b47/files/9403fce2-cef6-4e64-b193-94a62b41c640.jpg" alt="" className="w-5 h-5 rounded inline-block mr-1 align-middle" />
+        Ограниченное предложение — цена 3 000 ₽ вместо 9 900 ₽
       </div>
 
       {/* HERO */}
@@ -205,14 +206,14 @@ export default function Index() {
                     className="relative w-full rounded-3xl shadow-2xl object-cover aspect-square"
                   />
                   <div className="absolute -left-6 top-1/4 bg-white rounded-2xl shadow-xl px-4 py-3 flex items-center gap-2 animate-pulse-scale">
-                    <span className="text-2xl">💰</span>
+                    <img src="https://cdn.poehali.dev/projects/e6828564-96b9-4a92-8542-3bdfdbe90b47/files/6c0a0cad-cc2c-4d42-a983-dce1de2e7fdb.jpg" alt="Бонус" className="w-9 h-9 rounded-xl object-cover" />
                     <div>
                       <div className="text-xs text-gray-500">Бонус</div>
                       <div className="text-base font-bold text-[#10B981]">+7 000 ₽</div>
                     </div>
                   </div>
                   <div className="absolute -right-4 bottom-1/4 bg-white rounded-2xl shadow-xl px-4 py-3 flex items-center gap-2">
-                    <span className="text-2xl">🔥</span>
+                    <img src="https://cdn.poehali.dev/projects/e6828564-96b9-4a92-8542-3bdfdbe90b47/files/9403fce2-cef6-4e64-b193-94a62b41c640.jpg" alt="Кешбек" className="w-9 h-9 rounded-xl object-cover" />
                     <div>
                       <div className="text-xs text-gray-500">Кешбек</div>
                       <div className="text-base font-bold text-[#FF6B35]">до 100%</div>
@@ -381,19 +382,19 @@ export default function Index() {
 
             <AnimSection delay={150}>
               <div className="rounded-3xl p-8 text-white" style={{ background: "linear-gradient(135deg, #FF6B35, #FF9500)" }}>
-                <div className="text-5xl mb-4">🎯</div>
+                <img src="https://cdn.poehali.dev/projects/e6828564-96b9-4a92-8542-3bdfdbe90b47/files/f27d06f0-0028-446b-9560-826338165796.jpg" alt="Результат" className="w-16 h-16 rounded-2xl object-cover mb-4" />
                 <h3 className="font-oswald text-2xl font-bold uppercase mb-4">
                   Результат после курса
                 </h3>
                 <div className="space-y-4">
                   {[
-                    { emoji: "💳", text: "Настроены карты с максимальным кешбеком" },
-                    { emoji: "📱", text: "Установлены приложения-автоматы возврата" },
-                    { emoji: "💰", text: "Получен бонус 7 000 ₽ на счёт" },
-                    { emoji: "📈", text: "Личный план кешбека на каждый месяц" },
+                    { img: "https://cdn.poehali.dev/projects/e6828564-96b9-4a92-8542-3bdfdbe90b47/files/e08a132e-d243-401e-ada6-8344bd8dc668.jpg", text: "Настроены карты с максимальным кешбеком" },
+                    { img: "https://cdn.poehali.dev/projects/e6828564-96b9-4a92-8542-3bdfdbe90b47/files/a95d44cd-1961-4f1a-9634-4ff632061f24.jpg", text: "Установлены приложения-автоматы возврата" },
+                    { img: "https://cdn.poehali.dev/projects/e6828564-96b9-4a92-8542-3bdfdbe90b47/files/6c0a0cad-cc2c-4d42-a983-dce1de2e7fdb.jpg", text: "Получен бонус 7 000 ₽ на счёт" },
+                    { img: "https://cdn.poehali.dev/projects/e6828564-96b9-4a92-8542-3bdfdbe90b47/files/6e5e0575-671c-4877-b958-8578dcc5356d.jpg", text: "Личный план кешбека на каждый месяц" },
                   ].map((r, i) => (
                     <div key={i} className="flex items-center gap-3 rounded-xl px-4 py-3" style={{ background: "rgba(255,255,255,0.2)" }}>
-                      <span className="text-2xl">{r.emoji}</span>
+                      <img src={r.img} alt="" className="w-9 h-9 rounded-xl object-cover shrink-0" />
                       <span className="text-sm font-medium">{r.text}</span>
                     </div>
                   ))}
@@ -454,8 +455,9 @@ export default function Index() {
                 ))}
               </div>
 
-              <button className="w-full text-white font-bold text-xl py-5 rounded-2xl transition-all duration-300 hover:scale-[1.02] font-golos" style={{ background: "#FF6B35", boxShadow: "0 8px 30px rgba(255,107,53,0.4)" }}>
-                Купить курс за 3 000 ₽ 🚀
+              <button className="w-full text-white font-bold text-xl py-5 rounded-2xl transition-all duration-300 hover:scale-[1.02] font-golos flex items-center justify-center gap-3" style={{ background: "#FF6B35", boxShadow: "0 8px 30px rgba(255,107,53,0.4)" }}>
+                <img src="https://cdn.poehali.dev/projects/e6828564-96b9-4a92-8542-3bdfdbe90b47/files/6c0a0cad-cc2c-4d42-a983-dce1de2e7fdb.jpg" alt="" className="w-7 h-7 rounded-lg object-cover" />
+                Купить курс за 3 000 ₽
               </button>
 
               <p className="text-center text-gray-400 text-xs mt-4">
