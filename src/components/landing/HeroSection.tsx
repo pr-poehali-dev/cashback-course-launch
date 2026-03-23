@@ -9,7 +9,7 @@ export default function HeroSection() {
       {/* Топ-бар */}
       <div className="bg-[#FF6B35] text-white text-center py-2.5 text-sm font-medium tracking-wide">
         <img src="https://cdn.poehali.dev/projects/e6828564-96b9-4a92-8542-3bdfdbe90b47/files/9403fce2-cef6-4e64-b193-94a62b41c640.jpg" alt="" className="w-5 h-5 rounded inline-block mr-1 align-middle" />
-        Ограниченное предложение — цена 3 000 ₽ вместо 9 900 ₽
+        Курс полностью бесплатный — присоединяйся прямо сейчас!
       </div>
 
       {/* HERO */}
@@ -23,7 +23,7 @@ export default function HeroSection() {
               <AnimSection>
                 <div className="inline-flex items-center gap-2 bg-[#FFF3EE] border border-[#FF6B35]/20 text-[#FF6B35] text-sm font-semibold px-4 py-2 rounded-full mb-6">
                   <Icon name="TrendingUp" size={16} />
-                  Онлайн-курс · Доступ сразу после оплаты
+                  Онлайн-курс · Бесплатно
                 </div>
               </AnimSection>
 
@@ -54,11 +54,24 @@ export default function HeroSection() {
               <AnimSection delay={300}>
                 <div className="flex flex-col sm:flex-row gap-3 mb-8">
                   <a
-                    href="#buy"
-                    className="group inline-flex items-center justify-center gap-2 bg-[#FF6B35] hover:bg-[#e55a26] text-white font-bold text-lg px-8 py-4 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-xl shadow-[0_8px_30px_rgba(255,107,53,0.35)]"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group inline-flex items-center justify-center gap-2 text-white font-bold text-lg px-8 py-4 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                    style={{ background: "#0077FF", boxShadow: "0 8px 24px rgba(0,119,255,0.35)" }}
                   >
-                    Получить курс за 3 000 ₽
-                    <Icon name="ArrowRight" size={20} />
+                    <Icon name="Users" size={20} />
+                    ВКонтакте
+                  </a>
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group inline-flex items-center justify-center gap-2 text-white font-bold text-lg px-8 py-4 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                    style={{ background: "#26A5E4", boxShadow: "0 8px 24px rgba(38,165,228,0.35)" }}
+                  >
+                    <Icon name="Send" size={20} />
+                    Telegram
                   </a>
                 </div>
               </AnimSection>
