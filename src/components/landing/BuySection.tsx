@@ -26,14 +26,11 @@ export default function BuySection() {
           <AnimSection delay={100}>
             <div className="bg-white rounded-3xl p-8 md:p-10 shadow-2xl">
               <div className="text-center mb-8">
-                <div className="flex items-center justify-center gap-3 mb-2">
-                  <span className="text-gray-400 line-through text-2xl">9 900 ₽</span>
-                  <span className="bg-[#10B981] text-white text-sm font-bold px-3 py-1 rounded-full">–70%</span>
+                <span className="bg-[#10B981] text-white text-sm font-bold px-4 py-2 rounded-full">Бесплатно</span>
+                <div className="font-oswald text-6xl font-bold text-gray-900 mt-4">
+                  0 <span className="text-3xl text-gray-500">₽</span>
                 </div>
-                <div className="font-oswald text-6xl font-bold text-gray-900">
-                  3 000 <span className="text-3xl text-gray-500">₽</span>
-                </div>
-                <p className="text-gray-500 text-sm mt-2">Разовый платёж · Доступ навсегда</p>
+                <p className="text-gray-500 text-sm mt-2">Полный доступ · Навсегда</p>
               </div>
 
               <div className="space-y-3 mb-8">
@@ -54,13 +51,31 @@ export default function BuySection() {
                 ))}
               </div>
 
-              <button className="w-full text-white font-bold text-xl py-5 rounded-2xl transition-all duration-300 hover:scale-[1.02] font-golos flex items-center justify-center gap-3" style={{ background: "#FF6B35", boxShadow: "0 8px 30px rgba(255,107,53,0.4)" }}>
-                <img src="https://cdn.poehali.dev/projects/e6828564-96b9-4a92-8542-3bdfdbe90b47/files/6c0a0cad-cc2c-4d42-a983-dce1de2e7fdb.jpg" alt="" className="w-7 h-7 rounded-lg object-cover" />
-                Купить курс за 3 000 ₽
-              </button>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 text-white font-bold text-lg py-4 rounded-2xl transition-all duration-300 hover:scale-[1.02] font-golos flex items-center justify-center gap-2"
+                  style={{ background: "#0077FF", boxShadow: "0 8px 24px rgba(0,119,255,0.35)" }}
+                >
+                  <Icon name="Users" size={20} />
+                  ВКонтакте
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 text-white font-bold text-lg py-4 rounded-2xl transition-all duration-300 hover:scale-[1.02] font-golos flex items-center justify-center gap-2"
+                  style={{ background: "#26A5E4", boxShadow: "0 8px 24px rgba(38,165,228,0.35)" }}
+                >
+                  <Icon name="Send" size={20} />
+                  Telegram
+                </a>
+              </div>
 
               <p className="text-center text-gray-400 text-xs mt-4">
-                Оплата картой · Доступ открывается мгновенно
+                Присоединяйся к сообществу и получи доступ к курсу
               </p>
             </div>
           </AnimSection>
@@ -113,14 +128,28 @@ export default function BuySection() {
             <p className="text-lg mb-8" style={{ color: "rgba(255,255,255,0.9)" }}>
               Каждый день без курса — это деньги, которые уходят без возврата
             </p>
-            <a
-              href="#buy"
-              className="inline-flex items-center gap-2 bg-white font-bold text-xl px-10 py-5 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-              style={{ color: "#FF6B35" }}
-            >
-              Получить курс — 3 000 ₽
-              <Icon name="ArrowRight" size={22} />
-            </a>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 font-bold text-lg px-8 py-4 rounded-2xl transition-all duration-300 hover:scale-105"
+                style={{ background: "#0077FF", color: "#fff" }}
+              >
+                <Icon name="Users" size={20} />
+                ВКонтакте
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 font-bold text-lg px-8 py-4 rounded-2xl transition-all duration-300 hover:scale-105"
+                style={{ background: "#26A5E4", color: "#fff" }}
+              >
+                <Icon name="Send" size={20} />
+                Telegram
+              </a>
+            </div>
           </AnimSection>
         </div>
       </section>
